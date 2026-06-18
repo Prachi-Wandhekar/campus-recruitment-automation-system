@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+/* MAIN CONTAINER */
+
+.dashboard-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding-bottom: 100px;
+}
+
+/* HEADER */
+
+.top-header {
+  background: linear-gradient(to right, #0f4c81, #1976d2);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.top-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* HOME SECTION */
+
+.home-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 320px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.card-header h3 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* JOBS */
+
+.job-box,
+.job-card {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 5px solid #1976d2;
+}
+
+.job-box h4,
+.job-card h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+/* WEBINAR */
+
+.webinar-box,
+.webinar-card {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 5px solid #7c3aed;
+}
+
+.webinar-box h4,
+.webinar-card h3 {
+  margin-top: 0;
+  color: #4c1d95;
+}
+
+/* JOB PAGE */
+
+.jobs-page,
+.webinar-page {
+  padding: 20px;
+}
+
+/* RESUME BUILDER */
+
+.resume-builder {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+}
+
+.resume-builder h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #312e81;
+}
+
+.resume-box {
+  background: #4f46e5;
+  color: white;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resume-builder input,
+.resume-builder textarea {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.resume-builder input:focus,
+.resume-builder textarea:focus {
+  border: 1px solid #4f46e5;
+}
+
+.resume-builder textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* BUILD BUTTON */
+
+.build-btn {
+  width: 100%;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.build-btn:hover {
+  background: #4338ca;
+}
+
+/* FOOTER */
+
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px 0;
+  box-shadow: 0px -2px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.footer-nav button {
+  border: none;
+  background: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #334155;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-nav button:hover {
+  color: #4f46e5;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .home-section {
+    flex-direction: column;
+  }
+
+  .top-header h2 {
+    font-size: 18px;
+  }
+
+  .footer-nav button {
+    font-size: 12px;
+  }
+
+  .resume-builder {
+    padding: 15px;
+  }
+
+}
+/* APPLY JOB BUTTON */
+
+.apply-btn {
+
+  margin-top: 15px;
+  padding: 10px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1e40af
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  width: fit-content;
+}
+
+.apply-btn:hover {
+
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #1d4ed8,
+    #1e3a8a
+  );
+
+  box-shadow: 0 6px 18px rgba(
+    37,
+    99,
+    235,
+    0.3
+  );
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .apply-btn {
+
+    width: 100%;
+  }
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.college-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+}
+
+.college-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.job-actions {
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 15px;
+
+  flex-wrap: wrap;
+}
+
+.apply-link-btn {
+
+  background: #059669;
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
